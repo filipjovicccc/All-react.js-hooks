@@ -1,6 +1,8 @@
 import "./App.css";
 import { useState, useReducer } from "react";
 
+import UseEffect from "./components/UseEffect";
+
 function App() {
   // prvi zadatak postavuti counter pomocu use stejta
   // drugi zadatak input
@@ -46,7 +48,7 @@ function App() {
           showText: state.showText,
         };
       case "showText":
-        return { cont: state.count, showText: !state.showText };
+        return { count: state.count, showText: !state.showText };
       default:
         return state;
     }
@@ -83,6 +85,8 @@ function App() {
           <p>your example is here: {stat}</p>
         </span> */}
 
+        <UseEffect />
+
         {state.showText && <p>Show this text</p>}
         <button
           type="button"
@@ -94,11 +98,13 @@ function App() {
           //   dispatch({ type: "incriment" });
           //   dispatch({ type: "showText" });
           // }}
-          class="btn btn-secondary"
+          className="btn btn-secondary"
         >
           Use reducer dugme
         </button>
-        {state.count}
+        <div>
+          <span className="span">{state.count}</span>
+        </div>
       </form>
     </div>
   );
