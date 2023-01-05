@@ -10,7 +10,7 @@ function Effects() {
          setData(response.data[0].email)
          console.log("API WAS CALLED")
     })
-  },[count])
+  },[]) 
 
   return <div>Hello World {data}
   <h1>{count}</h1>

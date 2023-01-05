@@ -1,7 +1,9 @@
 import { useState } from "react";
 import Reducer from "./components/UseReducer"
 import Effects from "./components/UseEffect";
-
+import Ref from "./components/UseRef";
+import EffectLayout from "./components/UseEffectLayout";
+import Memo from "./components/UseMemo";
 
 const App = () =>{
   //1.Zadatak / Counter increasment useState
@@ -20,6 +22,10 @@ const App = () =>{
     </div>
     <Reducer />
     <Effects />
+    <Ref />
+    <EffectLayout />
+    <Memo />
+    
  </div>
 
 }
