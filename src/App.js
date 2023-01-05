@@ -4,6 +4,7 @@ import Effects from "./components/UseEffect";
 import Ref from "./components/UseRef";
 import EffectLayout from "./components/UseEffectLayout";
 import Memo from "./components/UseMemo";
+import Callback from "./components/useCallback";
 
 const App = () =>{
   //1.Zadatak / Counter increasment useState
@@ -25,6 +26,7 @@ const App = () =>{
     <Ref />
     <EffectLayout />
     <Memo />
+    <Callback />
     
  </div>
 
